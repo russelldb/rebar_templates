@@ -1,0 +1,8 @@
+{variables, [{appid, "myapp"}]}.
+{template, "mochi.app", "apps/{{appid}}/ebin/{{appid}}.app"}.
+{template, "mochi_app.erl", "apps/{{appid}}/src/{{appid}}_app.erl"}.
+{template, "mochi_sup.erl", "apps/{{appid}}/src/{{appid}}_sup.erl"}.
+{template, "mochi_deps.erl", "apps/{{appid}}/src/{{appid}}_deps.erl"}.
+{template, "mochi_web.erl", "apps/{{appid}}/src/{{appid}}_web.erl"}.
+{template, "mochi.erl", "apps/{{appid}}/src/{{appid}}.erl"}.
+{template, "mochi.rebar.config", "rebar.config"}.

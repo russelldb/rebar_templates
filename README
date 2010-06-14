@@ -1,0 +1,5 @@
+Some rebar templates to create a bare minimum mochiweb web app. Work in progress
+
+* TODO 
+** Duplicate the simplenode templates from rebar dist
+** Add  start-dev.sh that will use the rel/overlay/site dir contents and apps/*/ebin dirs to allow reloader for rapid dev
