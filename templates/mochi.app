@@ -9,6 +9,6 @@
     {{appid}}_deps
   ]},
   {registered, []},
-  {mod, {{{appid}}_app, []}},
+  {mod, { {{appid}}_app, []}},
   {env, []},
   {applications, [kernel, stdlib, crypto]}]}.

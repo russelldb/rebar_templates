@@ -6,11 +6,11 @@
 -module({{appid}}_web).
 -author('author <author@example.com>').
 
--export([start/1, stop/0, loop/2]).
+-export([start/0, stop/0, loop/2]).
 
 %% External API
 
-start(Options) ->
+start() ->
     {DocRoot, Options1} = get_option(docroot, Options),
     Loop = fun (Req) ->
                    ?MODULE:loop(Req, DocRoot)

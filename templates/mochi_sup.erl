@@ -41,13 +41,8 @@ upgrade() ->
 %% @spec init([]) -> SupervisorTree
 %% @doc supervisor callback.
 init([]) ->
-    Ip = case os:getenv("MOCHIWEB_IP") of false -> "0.0.0.0"; Any -> Any end,
-    WebConfig = [
-         {ip, Ip},
-                 {port, 8000},
-                 {docroot, {{appid}}_deps:local_path(["priv", "www"])}],
     Web = { {{appid}}_web,
-           { {{appid}}_web, start, [WebConfig]},
+           { {{appid}}_web, start, []},
            permanent, 5000, worker, dynamic},
 
     Processes = [Web],
