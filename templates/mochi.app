@@ -1,6 +1,6 @@
 {application, {{appid}},
  [{description, "{{appid}}"},
-  {vsn, "0.9"},
+  {vsn, "0.1"},
   {modules, [
     {{appid}},
     {{appid}}_app,

@@ -1,4 +1,4 @@
-{variables, [{appid, "myapp"}, {document_root, "rel/overlay/site/www"}]}.
+{variables, [{appid, "myapp"}, {nodeid, "mynode"}, {document_root, "./site/www"}, {templates, "./site/templates"}]}.
 {template, "mochi.app", "apps/{{appid}}/ebin/{{appid}}.app"}.
 {template, "mochi_app.erl", "apps/{{appid}}/src/{{appid}}_app.erl"}.
 {template, "mochi_sup.erl", "apps/{{appid}}/src/{{appid}}_sup.erl"}.
@@ -6,5 +6,15 @@
 {template, "mochi_web.erl", "apps/{{appid}}/src/{{appid}}_web.erl"}.
 {template, "mochi.erl", "apps/{{appid}}/src/{{appid}}.erl"}.
 {template, "mochi.rebar.config", "rebar.config"}.
-{template, "mochi.app.config", "app.config"}.
-{template, "index.html", "{{document_root}}/index.html"}.
+{template, "mochi.app.config", "rel/overlay/etc/app.config"}.
+{template, "mochi_index.html", "rel/overlay/site/templates/index.html"}.
+{temlate, "mochi_base", "rel/overlay/site/templates/base"}.
+{file, "mochi_style.css", "rel/overlay/site/www/css/style.css"}.
+{file, "mochi_js.js", "rel/overlay/site/www/js/{{appid}}.js"}.
+{template, "mochinode.reltool.config", "rel/reltool.config"}.
+{file, "mochinode.erl.script", "rel/overlay/erts-vsn/bin/erl"}.
+{file, "mochinode.nodetool", "rel/overlay/erts-vsn/bin/nodetool"}.
+{file, "mochinode.runner", "rel/overlay/bin/{{nodeid}}"}.
+{template, "mochinode.vm.args", "rel/overlay/etc/vm.args"}.
+{template, "mochi.erlgmail.cfg", "rel/overlay/etc/erlgmail.cfg"}.
+
