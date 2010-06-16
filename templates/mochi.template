@@ -8,7 +8,7 @@
 {template, "mochi.rebar.config", "rebar.config"}.
 {template, "mochi.app.config", "rel/overlay/etc/app.config"}.
 {template, "mochi_index.html", "rel/overlay/site/templates/index.html"}.
-{temlate, "mochi_base", "rel/overlay/site/templates/base"}.
+{template, "mochi_base", "rel/overlay/site/templates/base"}.
 {file, "mochi_style.css", "rel/overlay/site/www/css/style.css"}.
 {file, "mochi_js.js", "rel/overlay/site/www/js/{{appid}}.js"}.
 {template, "mochinode.reltool.config", "rel/reltool.config"}.
