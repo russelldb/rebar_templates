@@ -17,4 +17,5 @@
 {file, "mochinode.runner", "rel/overlay/bin/{{nodeid}}"}.
 {template, "mochinode.vm.args", "rel/overlay/etc/vm.args"}.
 {template, "mochi.erlgmail.cfg", "rel/overlay/etc/erlgmail.cfg"}.
+{template, "mochi.start_dev.sh", "start_dev.sh"}.
 
