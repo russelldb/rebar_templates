@@ -20,6 +20,9 @@ ensure_started(App) ->
 start() ->
     {{appid}}_deps:ensure(),
     ensure_started(crypto),
+    ensure_started(ssl),
+    ensure_started(erlgmail),
+    ensure_started(tempile),
     application:start({{appid}}).
 
 %% @spec stop() -> ok
