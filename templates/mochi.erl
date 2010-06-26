@@ -20,6 +20,7 @@ ensure_started(App) ->
 start() ->
     {{appid}}_deps:ensure(),
     ensure_started(crypto),
+    ensure_started(public_key),
     ensure_started(ssl),
     ensure_started(erlgmail),
     ensure_started(tempile),
