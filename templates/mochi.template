@@ -1,4 +1,4 @@
-{variables, [{appid, "myapp"}, {nodeid, "mynode"}, {document_root, "site/www"}, {templates, "site/templates"}, {dev_path_prefix, "rel/overlay/"}, {erlgmail_conf, "etc/erlgmail.cfg"}]}.
+{variables, [{appid, "myapp"}, {nodeid, "mynode"}, {document_root, "site/www"}, {templates, "site/templates"}, {dev_path_prefix, "rel/overlay/"}, {erlgmail_conf, "etc/erlgmail.cfg"}, {erlgmail_usr, "me@gmail.com"}, {erlgmail_pass, "password"}, {erlgmail_to, "mydefault@recipient"}]}.
 {template, "mochi.app", "apps/{{appid}}/ebin/{{appid}}.app"}.
 {template, "mochi_app.erl", "apps/{{appid}}/src/{{appid}}_app.erl"}.
 {template, "mochi_sup.erl", "apps/{{appid}}/src/{{appid}}_sup.erl"}.
